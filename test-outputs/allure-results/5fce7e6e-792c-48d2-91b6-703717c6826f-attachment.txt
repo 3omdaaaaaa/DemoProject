@@ -1,0 +1,15 @@
+[DEBUG] - [18-07-2025 05:46:17] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\abdelrahman\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [18-07-2025 05:46:18] [main] [com.swaglabs.listeners.TestNGListeners] - Test execution started
+[INFO] - [18-07-2025 05:46:18] [main] [com.swaglabs.utils.PropertiesUtils] - Loading Properties File Data
+[INFO] - [18-07-2025 05:46:18] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\abdelrahman\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[DEBUG] - [18-07-2025 05:46:24] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['login-credentials']['username']
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  By.id: user-name
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  By.id: user-name
+[DEBUG] - [18-07-2025 05:46:24] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['login-credentials']['password']
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  By.id: password
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  By.id: password
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be clickable:  By.id: login-button
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  By.id: login-button
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  By.id: login-button

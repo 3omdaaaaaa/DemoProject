@@ -1,0 +1,59 @@
+[DEBUG] - [18-07-2025 05:46:17] [main] [org.testng.TestNG] - suiteXmlPath: "C:\Users\abdelrahman\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml"
+[INFO] - [18-07-2025 05:46:18] [main] [com.swaglabs.listeners.TestNGListeners] - Test execution started
+[INFO] - [18-07-2025 05:46:18] [main] [com.swaglabs.utils.PropertiesUtils] - Loading Properties File Data
+[INFO] - [18-07-2025 05:46:18] [main] [org.testng.internal.Utils] - [TestNG] Running:
+  C:\Users\abdelrahman\AppData\Local\JetBrains\IdeaIC2025.1\temp-testng-customsuite.xml
+
+[DEBUG] - [18-07-2025 05:46:24] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['login-credentials']['username']
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  By.id: user-name
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  By.id: user-name
+[DEBUG] - [18-07-2025 05:46:24] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['login-credentials']['password']
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  By.id: password
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  By.id: password
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be clickable:  By.id: login-button
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  By.id: login-button
+[INFO] - [18-07-2025 05:46:24] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  By.id: login-button
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.AllureUtils] - Logs attached to Allure report
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.listeners.TestNGListeners] - test case validLogin passed
+[DEBUG] - [18-07-2025 05:46:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item1']['name']
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.pages.HomePage] - adding Sauce Labs Backpack to the cart
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be clickable:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[DEBUG] - [18-07-2025 05:46:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item1']['name']
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.pages.HomePage] - Actual value: Remove
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.pages.HomePage] - Sauce Labs Backpack added to cart successfully
+[DEBUG] - [18-07-2025 05:46:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item4']['name']
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.pages.HomePage] - adding Sauce Labs Fleece Jacket to the cart
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be clickable:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[DEBUG] - [18-07-2025 05:46:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item4']['name']
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.pages.HomePage] - Actual value: Remove
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.pages.HomePage] - Sauce Labs Fleece Jacket added to cart successfully
+[DEBUG] - [18-07-2025 05:46:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item5']['name']
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.pages.HomePage] - adding Sauce Labs Onesie to the cart
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be clickable:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[DEBUG] - [18-07-2025 05:46:25] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item5']['name']
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:25] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.pages.HomePage] - Actual value: Remove
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.pages.HomePage] - Sauce Labs Onesie added to cart successfully
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.utils.AllureUtils] - Logs attached to Allure report
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.listeners.TestNGListeners] - test case addToCart passed
+[DEBUG] - [18-07-2025 05:46:26] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item1']['name']
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.pages.HomePage] - removing Sauce Labs Backpack from the cart
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.utils.Waits] - waiting for element to be clickable:  [unknown locator]
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[DEBUG] - [18-07-2025 05:46:26] [main] [com.jayway.jsonpath.internal.path.CompiledPath] - Evaluating path: $['product-list']['item1']['name']
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.utils.Waits] - waiting for element to be visible:  [unknown locator]
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.utils.Waits] - waiting for element to be present:  [unknown locator]
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.pages.HomePage] - Actual value: Add to cart
+[INFO] - [18-07-2025 05:46:26] [main] [com.swaglabs.pages.HomePage] - Sauce Labs Backpack removed from cart successfully

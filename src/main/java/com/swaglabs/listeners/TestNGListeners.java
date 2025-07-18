@@ -2,6 +2,7 @@ package com.swaglabs.listeners;
 
 import com.swaglabs.drivers.GUIDriver;
 import com.swaglabs.utils.*;
+import org.apache.commons.io.FileUtils;
 import org.testng.*;
 import java.io.File;
 
@@ -25,6 +26,11 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
         FilesUtils.deleteFiles(allure_result);
         FilesUtils.cleanDirectory(logs);
         FilesUtils.deleteFiles(screenshots);
+
+        FilesUtils.createDirectory(allure_result);
+        FilesUtils.createDirectory(logs);
+        FilesUtils.createDirectory(screenshots);
+
 
     }
 

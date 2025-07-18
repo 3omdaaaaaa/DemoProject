@@ -1,13 +1,14 @@
 package com.swaglabs.utils;
 
 import org.apache.commons.io.FileUtils;
-import org.aspectj.util.FileUtil;
 
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 
 public class FilesUtils {
+
+
     private FilesUtils(){
         super();
     }
@@ -77,5 +78,23 @@ public class FilesUtils {
         }
     }
 
+    public static void createDirectory(File directory)
+    {
+        if(!directory.exists())
+        {
+            try {
+                Files.createDirectory(directory.toPath());
+                LogsUtil.info("Directory created " + directory);
+            }
+            catch (IOException e)
+            {
+                LogsUtil.error("Failed to create directory" + e.getMessage());
+            }
+        }
+        else
+        {
+            LogsUtil.info("Directory already exists");
+        }
+    }
 
 }

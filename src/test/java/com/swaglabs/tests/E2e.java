@@ -25,7 +25,7 @@ public class E2e {
 
     }
 
-    @Test(dependsOnMethods = "validLogin" )
+    @Test(dependsOnMethods = "validLogin")
     public void addToCart()
     {
         new HomePage(driver).addToCart(testData.getJsonData("product-list.item1.name"))

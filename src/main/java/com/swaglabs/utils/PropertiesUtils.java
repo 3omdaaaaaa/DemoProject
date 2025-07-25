@@ -14,7 +14,7 @@ public class PropertiesUtils {
         super();
     }
 
-    public static final String PROPERTIES_PATH = "src/main/resources/properties/";
+    public static final String PROPERTIES_PATH = "src/main/resources/";
 
     public static Properties loadProperties()
     {

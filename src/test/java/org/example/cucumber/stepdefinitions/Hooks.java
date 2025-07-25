@@ -8,26 +8,35 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class Hooks {
-   public static GUIDriver driver;
-   public static JsonUtils jsonUtils;
+    public static GUIDriver driver;
+    public static JsonUtils jsonUtils;
+    private static boolean isDriverInitialized = false;
 
+    public Hooks()
+    {}
 
     @Before
-    public void setBrowser()
-    {
-        PropertiesUtils.loadProperties();
-        driver = new GUIDriver(PropertiesUtils.getPropertyValue("browserType"));
-        jsonUtils = new JsonUtils("test-data");
-        LogsUtil.info("Browser is started successfully");
+    public static void setup() {
+        if(!isDriverInitialized)
+        {
+            LogsUtil.info("===== Test Suite Starting =====");
 
-
+            PropertiesUtils.loadProperties();
+            driver = new GUIDriver(PropertiesUtils.getPropertyValue("browserType"));
+            jsonUtils = new JsonUtils("test-data");
+            isDriverInitialized = true;
+            LogsUtil.info("Browser started successfully");
+        }
     }
 
     @After
-    public void closeBrowser()
-    {
-        driver.browser().closeBrowser();
-        LogsUtil.info("Browser closed successfully");
+    public static void tearDown() {}
 
+    public static void closeDriverAfterSuite() {
+        if (driver != null) {
+            driver.browser().closeBrowser();
+            LogsUtil.info("===== Browser closed at end of suite =====");
+        }
     }
+
 }

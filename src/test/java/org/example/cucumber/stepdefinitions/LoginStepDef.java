@@ -1,9 +1,7 @@
 package org.example.cucumber.stepdefinitions;
 
-import com.swaglabs.drivers.GUIDriver;
 import com.swaglabs.pages.LoginPage;
 import com.swaglabs.utils.JsonUtils;
-import com.swaglabs.utils.PropertiesUtils;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -22,27 +20,27 @@ public class LoginStepDef {
 
 
 
-    @Given ("User navigate to the login page")
+    @Given ("the user is on the login page")
     public void navigateToLoginPage()
     {
         loginPage.navigateToLoginPage();
     }
 
 
-    @When("User entered a valid username and password")
+    @When("the user enters a valid username and password")
     public void enterCredentials()
     {
-        loginPage.enterUsername(testData.getJsonData("login-credentials.username"));
-        loginPage.enterPassword(testData.getJsonData("login-credentials.password"));
+        loginPage.enterUsername(testData.getJsonData("login-credentials.username"))
+                 .enterPassword(testData.getJsonData("login-credentials.password"));
     }
 
-    @And("User click on login button")
+    @And("clicks the login button")
     public void clickLoginButton()
     {
         loginPage.clickLoginButton();
     }
 
-    @Then("User login successfully")
+    @Then("the user should be logged in successfully")
     public void assertSuccessfulLogin()
     {
         loginPage.assertValidLogin();

@@ -1,5 +1,6 @@
 package org.example.cucumber.stepdefinitions;
 
+import com.swaglabs.context.TestContext;
 import com.swaglabs.pages.HomePage;
 import com.swaglabs.utils.JsonUtils;
 import io.cucumber.java.en.And;
@@ -13,8 +14,10 @@ public class HomePageStepDef {
 
     public HomePageStepDef()
     {
-        homePage = new HomePage(Hooks.driver);
-        testData = Hooks.jsonUtils;
+//        homePage = new HomePage(Hooks.driver);
+//        testData = Hooks.jsonUtils;
+        homePage = new HomePage(TestContext.driver);
+        testData = TestContext.jsonUtils;
 
     }
 

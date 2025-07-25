@@ -1,5 +1,6 @@
 package org.example.cucumber.stepdefinitions;
 
+import com.swaglabs.context.TestContext;
 import com.swaglabs.pages.CartPage;
 import com.swaglabs.pages.ConfirmationPage;
 import com.swaglabs.pages.InformationPage;
@@ -20,11 +21,17 @@ public class CheckoutStepDef {
 
     public CheckoutStepDef()
     {
-        cartPage = new CartPage(Hooks.driver);
-        informationPage = new InformationPage(Hooks.driver);
-        overviewPage = new OverviewPage(Hooks.driver);
-        confirmationPage = new ConfirmationPage(Hooks.driver);
-        testData = Hooks.jsonUtils;
+//        cartPage = new CartPage(Hooks.driver);
+//        informationPage = new InformationPage(Hooks.driver);
+//        overviewPage = new OverviewPage(Hooks.driver);
+//        confirmationPage = new ConfirmationPage(Hooks.driver);
+//        testData = Hooks.jsonUtils;
+
+        cartPage = new CartPage(TestContext.driver);
+        informationPage = new InformationPage(TestContext.driver);
+        overviewPage = new OverviewPage(TestContext.driver);
+        confirmationPage = new ConfirmationPage(TestContext.driver);
+        testData = TestContext.jsonUtils;
     }
 
 

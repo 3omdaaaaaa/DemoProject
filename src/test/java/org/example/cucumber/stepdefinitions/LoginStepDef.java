@@ -1,5 +1,6 @@
 package org.example.cucumber.stepdefinitions;
 
+import com.swaglabs.context.TestContext;
 import com.swaglabs.pages.LoginPage;
 import com.swaglabs.utils.JsonUtils;
 import io.cucumber.java.en.And;
@@ -13,8 +14,10 @@ public class LoginStepDef {
 
     public LoginStepDef()
     {
-        loginPage = new LoginPage(Hooks.driver);
-        testData = Hooks.jsonUtils;
+//        loginPage = new LoginPage(Hooks.driver);
+//        testData = Hooks.jsonUtils;
+        loginPage = new LoginPage(TestContext.driver);
+        testData = TestContext.jsonUtils;
 
     }
 

@@ -21,7 +21,7 @@ public class AllureUtils {
         if(PropertiesUtils.getPropertyValue("os.name").toLowerCase().contains("win"))
         {
             String WIN = REPORT_PATH +".bat";
-            TerminalUtils.executionCommand(WIN,"generate",ALLURE_RESULTS_PATH,"-o",ALLURE_REPORT_PATH,"clean","--single-file");
+            TerminalUtils.executionCommand(WIN,"generate",ALLURE_RESULTS_PATH,"-o",ALLURE_REPORT_PATH,"--clean","--single-file");
             LogsUtil.info("Allure report generated successfully on windows");
 
         }

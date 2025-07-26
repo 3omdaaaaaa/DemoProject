@@ -12,7 +12,6 @@ public class CucumberConcurrentListener implements ConcurrentEventListener {
     File allureResult ;
     File logs ;
     File screenshots ;
-    File allure_report;
 
 
     @Override
@@ -29,7 +28,6 @@ public class CucumberConcurrentListener implements ConcurrentEventListener {
         PropertiesUtils.loadProperties();
 
         allureResult = new File(PropertiesUtils.getPropertyValue("allure.results.directory"));
-        allure_report = new File(PropertiesUtils.getPropertyValue("allure.report.directory"));
         logs = new File(LogsUtil.LOGS_PATH);
         screenshots = new File(ScreenshotsUtils.SCREENSHOT_PATH);
 

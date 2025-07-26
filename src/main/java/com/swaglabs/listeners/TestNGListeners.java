@@ -2,7 +2,6 @@ package com.swaglabs.listeners;
 
 import com.swaglabs.drivers.GUIDriver;
 import com.swaglabs.utils.*;
-import org.apache.commons.io.FileUtils;
 import org.testng.*;
 import java.io.File;
 
@@ -11,7 +10,6 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
     File allure_result ;
     File logs ;
     File screenshots ;
-    File allure_report;
 
 
 
@@ -21,7 +19,6 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
         PropertiesUtils.loadProperties();
 
         allure_result = new File(PropertiesUtils.getPropertyValue("allure.results.directory"));
-        allure_report = new File(PropertiesUtils.getPropertyValue("allure.report.directory"));
 
         logs = new File(LogsUtil.LOGS_PATH);
         screenshots = new File(ScreenshotsUtils.SCREENSHOT_PATH);
@@ -29,13 +26,10 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
         FilesUtils.deleteFiles(allure_result);
         FilesUtils.cleanDirectory(logs);
         FilesUtils.deleteFiles(screenshots);
-        FilesUtils.deleteFiles(allure_report);
 
         FilesUtils.createDirectory(allure_result);
         FilesUtils.createDirectory(logs);
         FilesUtils.createDirectory(screenshots);
-
-
     }
 
     @Override
@@ -43,7 +37,6 @@ public class TestNGListeners implements IExecutionListener, ITestListener, IInvo
         LogsUtil.info("Test execution finished");
         AllureUtils.generateAllureReport();
         AllureUtils.openAllureReport();
-
     }
 
     @Override

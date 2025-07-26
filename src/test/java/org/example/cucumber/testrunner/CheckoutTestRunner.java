@@ -6,7 +6,8 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/main/resources/features/Checkout.feature",
         glue = {"org.example.cucumber.stepdefinitions"},
-        plugin = {"pretty", "html:test-outputs/target/cucumber-reports.html"},
+        plugin = { "pretty",
+                    "html:test-outputs/target/cucumber-reports.html"},
         monochrome = true
 )
 public class CheckoutTestRunner extends AbstractTestNGCucumberTests {

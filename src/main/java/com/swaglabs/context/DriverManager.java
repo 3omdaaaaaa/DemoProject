@@ -1,9 +1,7 @@
 package com.swaglabs.context;
 
 import com.swaglabs.drivers.GUIDriver;
-import com.swaglabs.utils.JsonUtils;
-import com.swaglabs.utils.LogsUtil;
-import com.swaglabs.utils.PropertiesUtils;
+import com.swaglabs.utils.*;
 
 public class DriverManager {
     private static boolean isDriverInitialized = false;
@@ -11,7 +9,6 @@ public class DriverManager {
     public static void initDriver() {
         if (!isDriverInitialized) {
             LogsUtil.info("===== Test Suite Starting =====");
-            PropertiesUtils.loadProperties();
             TestContext.driver = new GUIDriver(PropertiesUtils.getPropertyValue("browserType"));
             TestContext.jsonUtils = new JsonUtils("test-data");
             isDriverInitialized = true;

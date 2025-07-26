@@ -1,5 +1,5 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Ordered Feature Execution" verbose="1" parallel="false">
+<suite name="Ordered Feature Execution" verbose="1" parallel="none">
     <listeners>
         <listener class-name="com.swaglabs.listeners.CustomTestNGListener"/>
     </listeners>

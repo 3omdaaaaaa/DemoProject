@@ -11,7 +11,7 @@ public class Hooks {
 
     @Before
     public static void setup() {
-        DriverManager.initDriver();
+         DriverManager.initDriver();
         jsonUtils = com.swaglabs.context.TestContext.jsonUtils;
     }
 

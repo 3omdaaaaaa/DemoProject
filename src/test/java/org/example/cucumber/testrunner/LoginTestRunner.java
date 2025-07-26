@@ -6,7 +6,9 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(
         features = "src/main/resources/features/LoginPage.feature",
         glue = {"org.example.cucumber.stepdefinitions"},
-        plugin = {"pretty", "html:test-outputs/target/cucumber-reports.html"},
+        plugin = { "pretty",
+                "html:test-outputs/target/cucumber-reports.html",
+                "com.swaglabs.listeners.CucumberConcurrentListener"},
         monochrome = true
 )
 public class LoginTestRunner extends AbstractTestNGCucumberTests {
